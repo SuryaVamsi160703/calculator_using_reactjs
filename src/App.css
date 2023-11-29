@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+.container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 120vh;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-size: "cover";
+  background-color: rgb(63, 61, 61);
+  color: rgb(34, 213, 49);
+  height: 100vh;
+  margin: 0; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.output{
+  /* outline: none;
+  border: none;
+  width: 320px;
+  height: 90px;
+  font-size: 32px;
+  padding: 2px 10px;
+  background-color: black;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: antiquewhite;
+  text-align: right; */
+  width: 235px; 
+  margin-left: 0px; 
+  outline: none;
+  border: none;
+  height: 86px;
+  font-size: 32px;
+  padding: 2px 5px 2px 15px; 
+  background-color: black;
+  border-top-left-radius: 6px;
+  /* border-top-right-radius: 6px; */
+  color: antiquewhite;
+  text-align: right;
+}
+button{
+  width: 85px;
+  height: 90px;
+  font-size: 26px;
+  cursor: pointer;
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  /* border-top-left-radius: 56px;
+  border-bottom-left-radius: 56px;
+  border-top-right-radius: 56px;
+  border-bottom-right-radius: 56px; */
+}
+.digit:hover{
+background-color: gray;
+}
+.operator:hover{
+  background-color: yellow;
+}
+.operator{
+  border-right: none;
+  background-color: rgb(255, 200, 0);
+}
+.fun-key:hover{
+  background-color: #feb862;
+}
+.fun-key{
+  background-color: #ffe4c4;
+  /* border-top-right-radius: 6px */
+}
+.fun-keyy{
+  background-color: rgb(199, 24, 18);
+
+  border-top-right-radius: 6px 
+}
+.fun-keyy:hover{
+  background-color: rgb(255, 0, 0);
+}
+.remove{
+  margin-left: 255px;
+  margin-top: -450px;
+  border-top-right-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.digitt{
+  border-bottom-left-radius: 6px;
+ 
+}
+.digitt:hover{
+  background-color: gray; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.operatorr{
+  border-bottom-right-radius: 6px;
+  border-right: none;
+  background-color: rgb(255, 200, 0);
+}
+.operatorr:hover{
+  background-color: yellow;
+}
+.operatorr:hover{
+  background-color: yellow;
+}
+.fun-keyyy:hover{
+  background-color: #feb862;
+}
+.text:hover{
+  color: rgb(255, 246, 71);
+  
+}
+.text{
+  width: 70%; 
+  height: 100px;
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text {
+    width: 90%;
   }
+}
+body{
+  margin: 0;
+  background-color: rgb(63, 61, 61);
+  color: rgb(34, 213, 49);
 }
